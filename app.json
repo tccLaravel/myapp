@@ -1,0 +1,12 @@
+{
+  "pages": [
+    "pages/index/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "考研院校专业库",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
+  }
+}
