@@ -12,8 +12,8 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.0.4",
-	"appid": "wxfff47a52c5f5669e",
-	"projectname": "kaoyan",
+	"appid": "wxfa8dc4380d29c451",
+	"projectname": "myapp",
 	"isGameTourist": false,
 	"condition": {
 		"search": {
