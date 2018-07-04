@@ -1,7 +1,4 @@
-<!--pages/goto/goto.wxml-->
-<view class='weui_cell'>页面栈最多10层，之后再navigateTo不会有响应</view>
+<!--pages/goto/D/D.wxml-->
 <button type="primary" size='mini' bindtap="gotoA"  > gotoA </button>
 <button type="primary" size='mini' bindtap="gotoB"  > gotoB </button>
 <button type="primary" size='mini' bindtap="gotoC"  > gotoC </button>
-<button type="primary" size='mini' bindtap="gotoD"  > gotoD </button>
-

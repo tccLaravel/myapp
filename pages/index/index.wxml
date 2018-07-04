@@ -1,7 +1,7 @@
 <!--pages/index/index.wxml-->
-
-<button type="default" size='mini' bindtap="default" plain="{{plain}}" > default </button>
-<button type="primary" size='mini' bindtap="primary" plain > default </button>
-<button type="warn" size='mini' bindtap="warn" plain > default </button>
+<button type="primary" size='mini' bindtap="GOTO"  > 页面跳转 </button>
+<button type="default" size='mini' bindtap="default"  > default </button>
+<button type="primary" size='mini' bindtap="primary"  > default </button>
+<button type="warn" size='mini' bindtap="warn"  > default </button>
 
 <button bindtap="setPlain" size='mini'>点击设置以上按钮plain属性</button>

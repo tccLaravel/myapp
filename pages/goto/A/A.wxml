@@ -1,0 +1,5 @@
+
+
+<button type="primary" size='mini' bindtap="gotoB"  > gotoB </button>
+<button type="primary" size='mini' bindtap="gotoC"  > gotoC </button>
+<button type="primary" size='mini' bindtap="gotoD"  > gotoD </button>

@@ -1,0 +1,4 @@
+<!--pages/goto/C/C.wxml-->
+<button type="primary" size='mini' bindtap="gotoA"  > navigateBack 回退2层 </button>
+<button type="primary" size='mini' bindtap="gotoB"  > redirectTo gotoB </button>
+<button type="primary" size='mini' bindtap="gotoD"  > gotoD </button>

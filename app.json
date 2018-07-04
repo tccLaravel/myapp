@@ -1,7 +1,11 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/goto/goto"
+    "pages/goto/goto",
+    "pages/goto/A/A",
+    "pages/goto/B/B",
+    "pages/goto/C/C",
+    "pages/goto/D/D"
   ],
   "window": {
     "backgroundTextStyle": "light",

@@ -63,5 +63,11 @@ Page({
    */
   onShareAppMessage: function () {
 
-  }
+  },
+
+  GOTO:function(){
+    wx.navigateTo({
+      url: '../goto/goto',
+    })
+  },
 })
