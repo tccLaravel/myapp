@@ -1,0 +1,12 @@
+<!--pages/component/component.wxml-->
+<view class='containt'>
+  <!--my-component 这个标签在json文件里面定义-->
+  <tag id="tag" prop-a="{{dataA}}" behaviros-prop="{{behavirosProp}}" bindtagevent="onTagEvent">
+    <view class='weui-cell'>page里面的内容</view>
+    <button type="primary" size='mini' bindtap="bind_change_propA"> 修改属性 propA 的值为 tcc </button>
+    <view style='color:Red'>组件的属性，通过审查元素是不可见的 就如 上面的 prop-a 属性审查元素时在 tag 标签里是看不见的</view>
+    <view style='color:Red'>但是通过在page里面设置 prop-a 属性的值，如果在 tag组件里面用到了 propA 属性 那么就会被显示出来，这样就实现了通过修改page数据，达到修改 tag 组件的内容</view>
+    <view style='color:red'>实现过程: tag组件定义 js文件里定义了属性 propA(一定要用驼峰法)；然后在 tag组件的xml文件里已用 '{{' propA '}}' (这里一定也是驼峰法)；然后 在引用tag 组件的page的xml文件里面设置 tag组件的属性 prop-a (一定要这样写 把驼峰法用 - 分割开)，这样就可以在page的js文件里面定义，修改 prop-a 属性的值，从而修改 tag 组件的propA属性的值</view>
+    <view>如果在page页面没有设置 组件tag的属性propA（上面的 tag 标签没有 prop-a 这个属性）,那么在 tag组件xml文件中的 propA 会自动获取 tag js里面给 propA 设置的默认值</view>
+  </tag>
+</view>
