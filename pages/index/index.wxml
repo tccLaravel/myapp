@@ -1,7 +1,6 @@
 <!--pages/index/index.wxml-->
 <button type="primary" size='mini' bindtap="GOTO"  > 页面跳转 </button>
+<button type="primary" size='mini' bindtap="bind_component"  > 组件 </button>
 <button type="default" size='mini' bindtap="default"  > default </button>
 <button type="primary" size='mini' bindtap="primary"  > default </button>
 <button type="warn" size='mini' bindtap="warn"  > default </button>
-
-<button bindtap="setPlain" size='mini'>点击设置以上按钮plain属性</button>

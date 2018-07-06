@@ -1,12 +1,12 @@
-// pages/index/index.js
-const app =  getApp();
+// pages/component/component.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    plain:true,
+    dataA: 'tangmm123',
+    behavirosProp:" set behaviros Prop value in page"
   },
 
   /**
@@ -65,14 +65,19 @@ Page({
 
   },
 
-  GOTO:function(){
-    wx.navigateTo({
-      url: '../goto/goto',
+  bind_change_propA:function(){
+    this.setData({
+      dataA:'tcc'
+    });
+  },
+
+  onTagEvent:function(e){
+    console.log(e.detail);
+    wx.showToast({
+      title: '组件内事件,and 传递的参数是：'+e.detail,
+      icon:"none",
+      duration:2000
     })
   },
-  bind_component:function(){
-    wx.navigateTo({
-      url: '../component/component',
-    })
-  }
+
 })

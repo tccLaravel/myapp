@@ -5,12 +5,13 @@
     "pages/goto/A/A",
     "pages/goto/B/B",
     "pages/goto/C/C",
-    "pages/goto/D/D"
+    "pages/goto/D/D",
+    "pages/component/component"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "考研院校专业库",
+    "navigationBarTitleText": "tcc app",
     "navigationBarTextStyle": "black",
     "enablePullDownRefresh": true
   }
