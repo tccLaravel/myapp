@@ -9,5 +9,7 @@
     <view style='color:red'>实现过程: tag组件定义 js文件里定义了属性 propA(一定要用驼峰法)；然后在 tag组件的xml文件里已用 '{{' propA '}}' (这里一定也是驼峰法)；然后 在引用tag 组件的page的xml文件里面设置 tag组件的属性 prop-a (一定要这样写 把驼峰法用 - 分割开)，这样就可以在page的js文件里面定义，修改 prop-a 属性的值，从而修改 tag 组件的propA属性的值</view>
     <view>如果在page页面没有设置 组件tag的属性propA（上面的 tag 标签没有 prop-a 这个属性）,那么在 tag组件xml文件中的 propA 会自动获取 tag js里面给 propA 设置的默认值</view>
   </tag>
+
   <view>behaviros的字段，属性，方法，都可以在组件里面被重新定义，完全覆盖，可以看到tag.js 与 prop.js 都有 myBehaviorMethod 方法</view>
+
 </view>
