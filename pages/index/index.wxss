@@ -1,10 +1,34 @@
 /* pages/index/index.wxss */
+@import "../../app.wxss";
 
-.button-hover {
-  background-color: red;
+.swiper-item{
+  display: block;
+  height: 150px;
+  top: 50%;
+  left: 50%;
 }
-/** 添加自定义button点击态样式类**/
-.other-button-hover {
-  background-color: blue;
+
+.demo-text-1{
+  background: red;
 }
-button {margin: 10px;}
+
+.demo-text-2{
+  background: yellow;
+}
+
+.demo-text-3{
+  background: #aabbcc;
+}
+
+.c_con{
+  display: flex;
+  flex-direction: column;
+  background-color: #aabbcc;
+  
+}
+
+.c_item{
+  
+  background-color: rebeccapurple;
+  border-bottom: 1px solid red;
+}

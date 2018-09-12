@@ -1,4 +1,6 @@
 // pages/index/index.js
+let api = require('../../api/mock.js')
+
 const app =  getApp();
 Page({
 
@@ -6,7 +8,16 @@ Page({
    * 页面的初始数据
    */
   data: {
-    plain:true,
+    background: ['demo-text-1', 'demo-text-2', 'demo-text-3'],
+    swipe:[],
+    indicatorDots: true,
+    vertical: false,
+    autoplay: false,
+    circular: false,
+    interval: 2000,
+    duration: 500,
+    previousMargin: 0,
+    nextMargin: 0
   },
 
   /**
@@ -20,14 +31,21 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+    let that = this
+    api.ajax('', function (res) {
+      //这里既可以获取模拟的res
+      console.log(res)
+      that.setData({
+        swipe: res.data
+      })
+    }, 'post', {}, 'index');
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    
   },
 
   /**
@@ -65,14 +83,30 @@ Page({
 
   },
 
-  GOTO:function(){
-    wx.navigateTo({
-      url: '../goto/goto',
+  changeProperty: function (e) {
+    var propertyName = e.currentTarget.dataset.propertyName
+    var newData = {}
+    newData[propertyName] = e.detail.value
+    this.setData(newData)
+  },
+  changeIndicatorDots: function (e) {
+    this.setData({
+      indicatorDots: !this.data.indicatorDots
     })
   },
-  bind_component:function(){
-    wx.navigateTo({
-      url: '../component/component',
+  changeAutoplay: function (e) {
+    this.setData({
+      autoplay: !this.data.autoplay
+    })
+  },
+  intervalChange: function (e) {
+    this.setData({
+      interval: e.detail.value
+    })
+  },
+  durationChange: function (e) {
+    this.setData({
+      duration: e.detail.value
     })
   }
 })

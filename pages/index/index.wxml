@@ -1,6 +1,27 @@
-<!--pages/index/index.wxml-->
-<button type="primary" size='mini' bindtap="GOTO"  > 页面跳转 </button>
-<button type="primary" size='mini' bindtap="bind_component"  > 组件 </button>
-<button type="default" size='mini' bindtap="default"  > default </button>
-<button type="primary" size='mini' bindtap="primary"  > default </button>
-<button type="warn" size='mini' bindtap="warn"  > default </button>
+<view class="container">
+  <view class="page-body">
+    <view class="page-section page-section-spacing swiper">
+      <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" circular="{{circular}}" vertical="{{vertical}}" interval="{{interval}}" duration="{{duration}}" previous-margin="{{previousMargin}}px" next-margin="{{nextMargin}}px">
+        <block wx:for="{{background}}" >
+          <swiper-item>
+            <!-- <view class="swiper-item {{item}}">{{item}}</view> -->
+            <view  class="swiper-item">
+              <image src='../../images/senior.png' style='height:100%;width:100%'></image> 
+            </view>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+    <view class="page-section" style="margin-top: 40rpx;margin-bottom: 0;">
+        
+    </view>
+  </view>
+</view>
+<button open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">授权登录</button>
+<view class='c_con'>
+  <view class='c_item'>1</view>
+  <view class='c_item'>1</view>
+  <view class='c_item'>1</view>
+  <view class='c_item'>1</view>
+  <view class='c_item'>1</view>
+</view>

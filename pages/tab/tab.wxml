@@ -1,0 +1,54 @@
+    <view class="container">
+  <view class="tab">
+    <view class="tab-list {{currentTab==0? 'active':''}}" data-current="0" bindtap='switchNav'>运动专区</view>
+    <view class="tab-list {{currentTab==1? 'active':''}}" data-current="1" bindtap='switchNav'>美食专区</view>
+  </view>
+  <swiper current='{{currentTab}}' class="swiper-box" duration='300' bindchange='bindChange' style="height: {{clientHeight?clientHeight+'px':'auto'}}">
+  <!--运动专区  -->
+  <swiper-item class="swiper-content">
+    <scroll-view scroll-y="{{true}}" style="height: {{clientHeight?clientHeight+'px':'auto'}}">
+      <block wx:for="{{video}}" wx:key="video">
+      <!-- <template name="video-detail"> -->
+        <view class="video-detail-list">
+          <view class="original">
+            <text class="original-name">{{original}}</text>
+            <view class="original-video">
+              <video src="{{item.url}}"></video>
+            </view>
+            <view class="original-video-explain">
+                <text class="original-video-date">{{item.addtime}}</text>
+                <text class="original-video-name">{{item.title}}</text>
+                <view class="original-video-detail">
+                  <text>{{originalContent}}</text>
+                </view>
+            </view>
+          </view>
+        </view>
+      </block>
+    </scroll-view> 
+  </swiper-item>
+
+<!--美食专区  -->
+    <swiper-item class="swiper-content">
+      <scroll-view scroll-y="{{true}}" style="height: {{clientHeight?clientHeight+'px':'auto'}}">
+        <block wx:for="{{video}}" wx:key="video">
+          <view class="video-detail-list">
+            <view class="original">
+              <text class="original-name">{{original}}</text>
+              <view class="original-video">
+                <video src="{{item.url}}"></video>
+              </view>
+              <view class="original-video-explain">
+                  <text class="original-video-date">{{item.addtime}}</text>
+                  <text class="original-video-name">{{item.title}}</text>
+                  <view class="original-video-detail">
+                    <text>{{originalContent}}</text>
+                  </view>
+              </view>
+            </view>
+          </view>
+        </block>
+      </scroll-view> 
+    </swiper-item>
+  </swiper>
+</view>

@@ -6,7 +6,7 @@
   <view style='margin-top:20rpx'>
       <button type="primary" size='mini' bindtap='bind_enent'> 组件内事件 </button>
     </view>
-  <slot></slot>
+    <slot></slot>
   <view>{{behavirosProp}}</view>
   <button type="primary" size='mini' bindtap="myBehaviorMethod">点击触发 behavior 方法</button>
 </view>

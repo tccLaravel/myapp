@@ -1,0 +1,24 @@
+<!--pages/index/index.wxml-->
+<button type="primary" size='mini' bindtap="GOTO"  > 页面跳转 </button>
+<button type="primary" size='mini' bindtap="bind_component"  > 组件 </button>
+<button type="default" size='mini' bindtap="bindModal"  > Modal </button>
+<button type="primary" size='mini' bindtap="bindAuth"  > 微信授权 </button>
+<button type="primary" size='mini' bindtap="bindThrottle" data-key='Tcc' > 防止多次点击 </button>
+<button type="primary" size='mini' bindtap="bindMock" data-key='Tcc' > mock 数据 </button>
+<button type="primary" size='mini' bindtap="bindFlex" data-key='Tcc' > flex布局 </button>
+<button type="warn" size='mini' bindtap="warn"  > default </button>
+<button type="primary" size='mini' bindtap="bindScanCode" > 扫码 </button>
+
+<button type="primary" size='mini' bindtap="bindSocketA"  > SOCKETA </button>
+
+<button type="primary" size='mini' bindtap="bindSocketB" > SOCKETB </button>
+
+<button type="primary" size='mini' bindtap="bindScrollView" > ScollView </button>
+
+<button type="primary" size='mini' bindtap="bindPop" > 点击事件冒泡  bindtap vs catchtap </button>
+
+<button type="primary" size='mini' bindtap="bindTab" > Tab </button>
+
+<modal hidden="{{modal}}" title="模态输入框" conform-text="OK" cancle-text="cancle" bindconfirm="bindConfirm" bindcancel="bindCancel">
+  <input type='text'placeholder="请输入内容" auto-focus name="test" bindinput='bindModalInput'></input>
+</modal>

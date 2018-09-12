@@ -1,0 +1,15 @@
+<view class="section">
+  <view class="section__title">vertical scroll</view>
+  <scroll-view scroll-y style="height:{{height}}px;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}" >
+    
+    <view wx:for="{{list}}" wx:key="item">
+      <view id='{{index}}' class="scroll-view-item {{item.name}}">{{index}}</view>
+    </view>
+    <view wx:if="{{ load==1 }}">加载中ing...</view>
+  </scroll-view>
+
+  <view class="btn-area">
+    <button size="mini" bindtap="tap">click me to scroll into view </button>
+    <button size="mini" bindtap="tapMove">click me to scroll</button>
+  </view>
+</view>

@@ -1,0 +1,131 @@
+/* pages/flex/flex.wxss */
+
+/*
+容器属性：
+
+flex-direction    默认值 row  横向为主轴，纵向为交叉轴,column 横向为交叉轴，纵向为主轴
+
+flex-wrap         内容超出后时候换行
+                  默认值 nowarp 不换行  wrap换行
+
+flex-flow:        是flex-direction与flex-wrap的集合
+
+justify-content   主轴方向上的对齐方式
+                  center 居中  flex-start （主轴为左到右情况下：左对齐）  flex-end （主轴为左到右情况下：右对齐） 
+                  space-around 每个item view 都留相同的边框
+                  space-between 每个子view左右都有留边，但是首尾两个view各自左右对齐不留边
+
+aline-item        在交叉轴上如何对齐  align-items: flex-start | flex-end | center | baseline | stretch;
+                  stretch  如果项目未设置高度或设为auto，将占满整个容器的高度
+
+项目属性：
+
+flex-grow        当有多余空间时，元素的放大比例
+flex-shrink      当空间不足时，元素的缩小比例
+flex-basis       元素在主轴上占据的空间
+flex             是 flex-grow   flex-shrink   flex-basis 三个的简写  
+order            定义元素的排列顺序
+align-self       定义元素自身的对齐方式
+
+*/
+
+.container {
+  height: 100%;
+  width: 100%;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap:nowrap; */
+  justify-content: space-between;
+}
+
+.sp {
+  height: 300rpx;
+  width: 100%;
+  background-color: cyan;
+  border: 1px solid deeppink;
+  flex-shrink: 1;
+  align-self: center;
+}
+
+.i3 {
+  flex-shrink: 0;
+  flex-basis: 200rpx;
+}
+
+.swiper {
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
+}
+
+.swiper_item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper_conten{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+}
+
+.menu {
+  padding-top: 20rpx;
+  padding-bottom: 20rpx; 
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  background-color:  chartreuse;
+  border-bottom: 1px solid deeppink;
+}
+
+.menu_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100rpx;
+  width: 100rpx;
+  background-color: cyan;
+  border: 1px solid deeppink;
+}
+
+.list{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.item {
+  display: flex;
+  height: 250rpx;
+  width: 100%;
+  background-color: cyan;
+  border-bottom: 1px solid deeppink;
+}
+
+.list_item_img{
+  height: 100%;
+  width: 30%; 
+}
+
+.list_item_info{
+  height: 100%;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+}
+
+.title{
+  flex-basis:1;
+}
+.info{
+  display: flex;
+  flex-direction: row;
+  flex-basis:2;
+}

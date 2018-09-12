@@ -1,0 +1,55 @@
+<!--pages/flex/flex.wxml-->
+<text>pages/flex/flex.wxml</text>
+<view class='container'>
+  <view class='sp'>
+    <swiper class='swiper' indicator-dots="true" indicator-color="red" autoplay="true">
+      <swiper-item class='swiper_item'>
+        <image src='../../images/icon_API.png'></image>
+      </swiper-item>
+      <swiper-item class='swiper_item'>
+        <image src='../../images/senior.png'></image>
+      </swiper-item>
+      <swiper-item class='swiper_item'>
+        <image src='../../images/icon_API_HL.png'></image>
+      </swiper-item>
+    </swiper>
+  </view>
+  <view class='menu'>
+    <view class='menu_item'>2</view>
+    <view class='menu_item'>3</view>
+    <view class='menu_item'>4</view>
+  </view>
+
+  <view class='list'>
+    <view class='item'>
+      <image class='list_item_img' src='../../images/senior.png'></image>
+      <view class='list_item_info'>
+        <view class='list_item title'>title</view>
+        <view class='list_item info'>
+          <view class='item_info'>
+            <image class='icon'></image>
+            <view>2018-07-19</view>
+          </view>
+          <view class='item_info'>
+            <image class='icon'></image>
+            <view>2018-07-19</view>
+          </view>
+          <view class='item_info'>
+            <image class='icon'></image>
+            <view>2018-07-19</view>
+          </view>
+          <view class='item_info'>
+            <image class='icon'></image>
+            <view>2018-07-19</view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class='item'>6</view>
+    <view class='item'>7</view>
+    <view class='item'>8</view>
+    <view class='item'>9</view>
+    <view class='item'>10</view>
+  </view>
+
+</view>
