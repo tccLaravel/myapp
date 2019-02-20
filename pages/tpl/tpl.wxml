@@ -1,0 +1,3 @@
+<!--pages/tpl/tpl.wxml-->
+<import src="/component/template/demo/demo.wxml"/>
+<template is="msgItem" data="{{...items}}"></template>

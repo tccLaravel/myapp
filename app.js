@@ -1,6 +1,12 @@
 //app.js
 App({
-  onLaunch: function () {
+  onLaunch: function (options) {
+    console.log(options)
+    // options 中的 scene 需要使用 decodeURIComponent 才能获取到生成二维码时传入的 scene
+    var scene = decodeURIComponent(options.scene)
+    console.log('scene', scene)
+    console.log(decodeURIComponent(options))
+
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
@@ -9,14 +15,14 @@ App({
     // 登录
     wx.login({
       success: res => {
-        //console.log(res);
+        console.log(res);
         // 发送 res.code 到后台换取 openId, sessionKey, unionId
       }
     })
 
     wx.getUserInfo({
       success: res => {
-        //console.log(res)
+        console.log(res)
         // 可以将 res 发送给后台解码出 unionId
         this.globalData.userInfo = res.userInfo
 

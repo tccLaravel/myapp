@@ -1,0 +1,11 @@
+/* pages/swiper/swiper.wxss */
+
+
+ .line_box{
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 1px solid #e5e5e4;
+}

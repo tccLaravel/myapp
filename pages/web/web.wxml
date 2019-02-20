@@ -1,0 +1,4 @@
+<!--pages/web/web.wxml-->
+<text>pages/web/web.wxml</text>
+
+<web-view src="https://www.biquge5200.cc/8_8187/3899817.html" bindmessage="bMsg" bindload="bLoad" binderror="bError"></web-view>

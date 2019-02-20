@@ -1,4 +1,36 @@
 <!--pages/index/index.wxml-->
+
+<view class='contain'>
+  <view class='row' bindtap="GOTO" >
+    <view class='txt'>页面跳转</view>
+    <image class='img' src='/images/icon_API_HL.png'></image>
+  </view>
+  <view class='row' bindtap="bind_component" >
+    <view class='txt'>组件</view>
+    <image class='img' src='/images/icon_API_HL.png'></image>
+  </view>
+  <view class='row' bindtap="bindModal">
+    <view class='txt'>Modal</view>
+    <image class='img' src='/images/icon_API_HL.png'></image>
+  </view>
+  <view class='row' bindtap="bindAuth" >
+    <view class='txt'>微信授权</view>
+    <image class='img' src='/images/icon_API_HL.png'></image>
+  </view>
+  <view class='row' bindtap="bindTpl" >
+    <view class='txt'>模板template </view>
+    <image class='img' src='/images/icon_API_HL.png'></image>
+  </view>
+  <view class='row' bindtap="bindWeb" >
+    <view class='txt'>web_view </view>
+    <image class='img' src='/images/icon_API_HL.png'></image>
+  </view>
+  <view class='row' bindtap="bindMap" >
+    <view class='txt'>map 地图 </view>
+    <image class='img' src='/images/icon_API_HL.png'></image>
+  </view>
+</view>
+
 <button type="primary" size='mini' bindtap="GOTO"  > 页面跳转 </button>
 <button type="primary" size='mini' bindtap="bind_component"  > 组件 </button>
 <button type="default" size='mini' bindtap="bindModal"  > Modal </button>
@@ -14,6 +46,8 @@
 <button type="primary" size='mini' bindtap="bindSocketB" > SOCKETB </button>
 
 <button type="primary" size='mini' bindtap="bindScrollView" > ScollView </button>
+
+<button type="primary" size='mini' bindtap="bindSwiper" > Swiper  </button>
 
 <button type="primary" size='mini' bindtap="bindPop" > 点击事件冒泡  bindtap vs catchtap </button>
 

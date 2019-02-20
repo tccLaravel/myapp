@@ -1,34 +1,6 @@
 /* pages/index/index.wxss */
 @import "../../app.wxss";
 
-.swiper-item{
-  display: block;
-  height: 150px;
-  top: 50%;
-  left: 50%;
-}
-
-.demo-text-1{
+.container{
   background: red;
-}
-
-.demo-text-2{
-  background: yellow;
-}
-
-.demo-text-3{
-  background: #aabbcc;
-}
-
-.c_con{
-  display: flex;
-  flex-direction: column;
-  background-color: #aabbcc;
-  
-}
-
-.c_item{
-  
-  background-color: rebeccapurple;
-  border-bottom: 1px solid red;
 }

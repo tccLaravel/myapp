@@ -1,0 +1,19 @@
+<wxs src="./fun.wxs" module="fun" />
+<text>pages/swiper/swiper.wxml</text>
+<view>title</view>
+<view>title2</view>
+<view>{{lists.length}}</view>
+<!-- <block wx:for="{{lists.length/4}}" wx:key="*this">
+  <view>{{index}}</view>
+</block> -->
+<view>
+  <swiper>
+    <block wx:for="{{lists.length/4}}" wx:key="*this">
+      <swiper-item>
+        <block wx:for="{{fun.slice(lists,index*4,(index+1)*4)}}" wx:key="id">
+          <view>{{item.title}}</view>
+        </block>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>

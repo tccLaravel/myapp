@@ -1,0 +1,7 @@
+<!--pages/map/map.wxml-->
+<text>pages/map/map.wxml</text>
+<map id="1" 
+subkey="RIYBZ-F2XAF-UMAJY-JY4BR-U5MQS-PTB4I"
+longitude="116.715790" latitude="23.362490" markers="{{markers}}"
+scale="18"  style="width: 100%; height: 300px;" bindtap="click">
+</map>

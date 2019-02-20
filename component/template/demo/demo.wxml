@@ -1,0 +1,8 @@
+<!--component/template/demo/demo.wxml-->
+<template name="msgItem">
+  <view>
+    <text> {{index}}: {{msg}} </text>
+    <text bindtap='onTap'> Time: {{time}} </text>
+  </view>
+</template>
+

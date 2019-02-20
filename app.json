@@ -14,7 +14,12 @@
     "pages/home/home",
     "pages/scroll/scroll",
     "pages/pop/pop",
-    "pages/tab/tab"
+    "pages/tab/tab",
+    "pages/tpl/tpl",
+    "component/template/demo/demo",
+    "pages/web/web",
+    "pages/map/map",
+    "pages/swiper/swiper"
   ],
   "window": {
     "backgroundTextStyle": "light",

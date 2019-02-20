@@ -212,4 +212,24 @@ Page({
       url: '../tab/tab',
     })
   },
+  bindTpl:function(e){
+    wx.navigateTo({
+      url: '../tpl/tpl',
+    })
+  },
+  bindWeb:function(e){
+    wx.navigateTo({
+      url: '../web/web',
+    })
+  },
+  bindMap: function (e) {
+    wx.navigateTo({
+      url: '../map/map',
+    })
+  },
+  bindSwiper:function(e){
+    wx.navigateTo({
+      url: '../swiper/swiper',
+    })
+  }
 })
